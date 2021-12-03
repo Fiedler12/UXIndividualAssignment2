@@ -8,4 +8,8 @@ class Word(word: String) {
             charList.add(letter)
         }
     }
+
+    fun getLetter(index: Int): String {
+        return charList[index].letter.toString()
+    }
 }

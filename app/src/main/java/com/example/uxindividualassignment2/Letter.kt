@@ -1,6 +1,10 @@
 package com.example.uxindividualassignment2
 
 class Letter(char: Char) {
-    val char = char
+    val letter: Char
     var isShown: Boolean = false
+
+    init {
+        letter = char
+    }
 }

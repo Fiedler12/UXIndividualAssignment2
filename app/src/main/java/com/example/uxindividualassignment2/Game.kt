@@ -3,6 +3,7 @@ package com.example.uxindividualassignment2
 class Game {
     var gameState: GameState
     var points: Int
+    var health: Int
     var gameIsActive: Boolean
     var word: Word
 
@@ -10,15 +11,7 @@ class Game {
         gameState = GameState.SPIN
         points = 0
         gameIsActive = true
-        word = Word("Further")
-    }
-
-    fun next() {
-        if (gameState == GameState.SPIN) {
-            gameState = GameState.GUESS
-        }
-        else {
-            gameState = GameState.SPIN
-        }
+        health = 5
+        word = Word("FURTHER")
     }
 }
